@@ -1,2 +1,12 @@
-# Tarea3
-Solución de la tarea 3 del curso Modelos probabilísticos de señales y sistemas
+# Tarea3 Fabian Zamora C Modelos probabilisticos de señales y sistemas
+Solución 
+
+La tarea se abordó por el punto 4. Lo primero fue graficar las funciones de densidad marginal de X y Y y de allí decidir el modelo a seguir. Para graficar se utilizó matplotlib. Se recorrieron las filas y columnas, se sumaron (independientmente) y se graficaron contra los valores de las variables X y Y en cada caso. Las imagenes se adjuntan. 
+
+Se procedió entonces con el punto 1. Se observó a partir de las gráficas que los datos seguían una distribución normal o Gaussiana y se definió una función para que se evaluasen. Luego, se buscaron los valores reales de Mu y Sigma del modelo. Finalmente, se compararon los Mu y Sigma reales e ideales con la función "curve_fit" y así determinar qué valor deberían tener para el más estrecho acercamiento a dicho modelo. Todos los valores aparecen bien documentados y explicados en el código. El procedimiento se realiza para X y Y.  
+
+Se avanza al punto 2 el cual es de resolución analítica. La función de densidad conjunta de dos variables aleatorias independientes es la multiplicación de sus probabilidades. Es muy importante tener ese concepto claro. La independencia es necesaria para poder concluirlo. 
+
+Por último está el punto 3 el cual consiste en contrar valores para diferentes atributos. El primero el valor de la correlación. La correlación mide la proporcionalidad entre dos variables aleatorias. Da información acerca de como influye una variable A contra una B en términos de su crecimiento (o decrecimiento). La covarianza es la variación conjunta de las variables estadísticas.Es una medida para determinar la dependencia entre variables y eso lo hace muy importante. Un valor de coviaranza positivo indica que las variables son directamente proporcionales: los valores altos de una coinciden con los valores altos de la otra. Esto se observa que es cierto en la gráficas, por lo que el signo es consistente. Se sabe además que entre más cercano al cero que es el valor de covarianza más independientes son las variables. Se observa un valor bajo y se supuso independencia de las variables, por lo que nos asegura que no se anda muy lejos con esa asunción. El tercer concepto es el coeficiente de correlación de Pearson el cual mide la dependencia lineal de dos variables aleatorias. El valor obtenido es cercano a cero y positivo. La cercanía a cero apunta a la independencia lineal ya que si es exactamente cero, no hay relación lineal entre las variables. El hecho de que sea positivo nos hace saber que la relación de linealidad es correlación positiva. Es importante notar que los resultados son congruentes entre sí.   
+
+
